@@ -1,3 +1,5 @@
+using System;
+
 namespace MagicEightBall
 {
   public class MagicEightBall
@@ -23,5 +25,13 @@ namespace MagicEightBall
         "Outlook not so good",
         "Very doubtful",
     };
+
+    public string GetAnswer()
+    {
+      Random random = new Random();
+      int answerIndex = random.Next(0, answers.Length);
+
+      return answers[answerIndex];
+    }
   }
 }
