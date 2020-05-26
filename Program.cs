@@ -2,11 +2,16 @@
 
 namespace MagicEightBall
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      // initialise variables
+      string userQuestion;
+
+      // get user question
+      Console.WriteLine("What would you like advice on?");
+      userQuestion = Console.ReadLine();
     }
+  }
 }
